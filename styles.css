@@ -840,3 +840,54 @@ footer {
     opacity: 1;
     transform: scale(1);
 }
+
+/* Maintenance Page Styles */
+.maintenance-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--light-green) 0%, var(--white) 100%);
+    text-align: center;
+    padding: 2rem;
+}
+
+.maintenance-card {
+    background-color: var(--white);
+    padding: 4rem 3rem;
+    border-radius: var(--card-radius);
+    box-shadow: var(--shadow-hover);
+    max-width: 600px;
+    width: 100%;
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+.maintenance-icon {
+    font-size: 4rem;
+    color: var(--accent-orange);
+    margin-bottom: 1.5rem;
+    animation: pulse 2s infinite;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
